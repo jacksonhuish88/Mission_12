@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import HeaderNCAA from './components/headerNCAA';
+import TeamCards from './components/teamCards';
+import AllTeams from './components/allTeams';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <div className="App-header">
+        <HeaderNCAA />
+        <div
+          className="row"
+          style={{ textAlign: 'center', marginLeft: '50px' }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <div className="col-6">
+            <TeamCards />
+          </div>
+          <div className="col-6" style={{ textAlign: 'left' }}>
+            <AllTeams />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
