@@ -13,7 +13,11 @@ function App() {
         <HeaderNCAA />
         <div
           className="row"
-          style={{ textAlign: 'center', marginLeft: '50px' }}
+          style={{
+            textAlign: 'center',
+            marginLeft: '25px',
+            marginRight: '25px',
+          }}
         >
           <div className="col-6">
             <TeamCards />

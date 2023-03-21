@@ -4167,7 +4167,18 @@ function AllTeams() {
   return (
     <div>
       <br></br>
-      <h3 style={{ paddingBottom: '15px', textDecoration: 'underline' }}>
+      <h3
+        style={{
+          paddingBottom: '15px',
+          paddingTop: '15px',
+          textAlign: 'center',
+          borderBottom: 'solid black',
+          borderRadius: '10px 10px 10px 10px',
+          boxShadow: '0px 4px 4px black',
+          backgroundColor: '#ff7c00',
+          color: 'black',
+        }}
+      >
         List of NCAA Teams
       </h3>
       <ul>

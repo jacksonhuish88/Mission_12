@@ -4167,11 +4167,34 @@ function TeamCards() {
   return (
     <div>
       <br></br>
-      <h3 style={{ paddingBottom: '15px', textDecoration: 'underline' }}>
+      <h3
+        style={{
+          paddingBottom: '15px',
+          paddingTop: '15px',
+          textAlign: 'center',
+          borderBottom: 'solid black',
+          borderRadius: '10px 10px 10px 10px',
+          boxShadow: '0px 4px 4px black',
+          backgroundColor: '#ff7c00',
+          color: 'black',
+        }}
+      >
         General Team Information
       </h3>
       {teamList.map((team) => (
-        <>
+        <div
+          style={{
+            paddingTop: '10px',
+            paddingBottom: '10px',
+            marginBottom: '10px',
+            textAlign: 'center',
+            borderBottom: 'solid black',
+            borderRadius: '10px 10px 10px 10px',
+            backgroundColor: 'white',
+            color: 'black',
+            alignContent: 'left',
+          }}
+        >
           <h5>
             <b>School:</b> {team.school}
           </h5>
@@ -4181,8 +4204,7 @@ function TeamCards() {
           <h5>
             <b>Location:</b> {team.city}, {team.state}
           </h5>
-          <br></br>
-        </>
+        </div>
       ))}
     </div>
   );
