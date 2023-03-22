@@ -4163,6 +4163,7 @@ const teamList = [
   },
 ];
 
+// THESE FUNCTION WILL DESPLAY ALL THE TEAMS AND THEIR INFORMATION
 function TeamCards() {
   return (
     <div>

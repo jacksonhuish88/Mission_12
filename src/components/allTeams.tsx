@@ -4163,6 +4163,7 @@ const teamList = [
   },
 ];
 
+// THIS FUNCTION WILL DISPLAY ALL THE NCAA BASKETBALL TEAMS
 function AllTeams() {
   return (
     <div>
